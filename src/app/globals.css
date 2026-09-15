@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: var(--font-display);
+  --font-sans: var(--font-body);
+
+  --color-blush: #ff7eb3;
+  --color-rose: #ff4d6d;
+  --color-lilac: #c084fc;
+  --color-midnight: #2b0a3d;
+}
+
+.romantic-bg {
+  background: linear-gradient(135deg, #2b0a3d, #7a1e4f, #3b0a5c);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
